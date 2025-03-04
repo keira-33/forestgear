@@ -5,12 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <!-- you want your font links before main.css link -->
+    <!-- GOOGLE FONT LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+
+
+
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="shortcut icon" href="images/forest-icon-png-29.png" type="image/x-icon">
+
     <title>FORESTGEAR</title>
 </head>
 <body>
     <main>
-        <section>
+        <section class="hero">
             <header>
+                <img src="images/logo.png" alt="Homepage" title="Homepage" class="logoimage">
                 <nav id="nav_menu">
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -22,8 +37,8 @@
                 </nav>    
             </header>
             
-            <div>
-                <p>Get all the &nbsp;&nbsp; ForestGear you need here at</p>
+            <div class="title-text">
+                <p>Get all the &nbsp;&nbsp; <span class="allcaps">Forest<span class="thin-text">Gear</span></span> you need here at</p>
                 <h1 class="allcaps">Forest<wbr><span class="thin-text">Gear</span></h1>
                 <p>You won't regret it</p>
             </div>
@@ -55,11 +70,15 @@
         <div class="cta">
             <div class="cta-contents">
                 <p>Click here to join our mailing list</p>
+                <a href="#" class="btn">Join</a>
             </div>
         </div>
+        <div>
+            <button onclick="topFunction()" id="cornerbtn" class="return-to-top" title="Return to Top"><img src="images/back-to-top-icon-png-7.jpg" alt="Return to Top"></button>
 
+        </div>
         <footer>
-            <p>&copy; [Your Name] Productions</p>
+            <p>&copy; <span id="copyright"></span> Keira Productions</p>
         </footer>
 
     </main>

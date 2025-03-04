@@ -5,6 +5,9 @@
 }
 
 body {
+    font-family: "Gaegu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 110%;
     background-color: #202124;
     color: aliceblue;
@@ -13,12 +16,55 @@ body {
     overflow-x: hidden;
 }
 
-nav {
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoimage {
+    max-width: 200px;
+    padding: 1em;
+}
+
+.hero {
+    background-color: darkgreen;
+    /* have to do ../ to step up a level outside of styles folder and into root level then go */
+    background-image: url(../images/hero-image-forest2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 100vh;
     color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    /* color: aliceblue; */
     text-transform: lowercase;
     font-size: 140%;
     align-items: center;
     padding: 0 2em 0 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav a:link, nav a:visited {
+    color: aliceblue;
+    text-decoration: none;
+    transition: all ease-in-out 300ms;
+}
+
+nav a:hover, nav a:focus{
+    color: fuchsia;
+    text-decoration: underline;
+    text-shadow: 0 0 9px black;
 }
 
 nav a {
@@ -27,7 +73,7 @@ nav a {
 
 .title-text {
     align-self: flex-start;
-    margin: 15vw 0 0 12vw;
+    margin: 25vh 0 0 12vw;
     display: flex;
     flex-direction: column;
 }
@@ -54,6 +100,9 @@ nav a {
 .sales-points {
     padding: 8vh 0;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .sales-point {
     margin: 2em 1.65em;
@@ -61,6 +110,62 @@ nav a {
 }
 .sales-point p {
     margin: .5em 0;
+}
+
+.cta {
+    height: 45vh;
+    background-image: url(../images/hero-image-forest.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-contents {
+    color: #202124;
+    padding: 3em 5em;
+    background-color: aliceblue;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    display: inline-block;
+    align-self: center;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: green;
+    border-radius: 10px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600px;
+    box-shadow: 1px 1px 12px 2px gray;
+}
+
+.return-to-top{
+    display: none;
+    position: fixed;
+    left: 75px;
+    bottom: 75px;
+    /* z-index changes position in order of layers */
+    z-index: 999;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    /* last value in bg color is opacity */
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all ease-in-out 300ms;
+}
+
+.return-to-top img {
+    max-width: 50px;
+}
+
+.return-to-top:hover {
+    background-color: rgba(255,0,255,.5);
 }
 
 footer {
