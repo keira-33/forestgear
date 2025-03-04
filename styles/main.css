@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 110%;
+    background-color: #202124;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+nav {
+    color: aliceblue;
+    text-transform: lowercase;
+    font-size: 140%;
+    align-items: center;
+    padding: 0 2em 0 0;
+}
+
+nav a {
+    text-shadow: 0 0 3px black;
+}
+
+.title-text {
+    align-self: flex-start;
+    margin: 15vw 0 0 12vw;
+    display: flex;
+    flex-direction: column;
+}
+.allcaps {
+    text-transform: lowercase;
+    color: fuchsia;
+    font-weight: bold;
+    letter-spacing: 20px;
+}
+.title-text h1 {
+    font-size: 550%;
+    text-align: center;
+    letter-spacing: 25px;
+    outline: 3px solid fuchsia;
+    outline-offset: .2em;
+}
+.title-text p {
+    margin: 1.5em auto;
+}
+.thin-text {
+    font-weight: 200;
+}
+
+.sales-points {
+    padding: 8vh 0;
+    text-align: center;
+}
+.sales-point {
+    margin: 2em 1.65em;
+    width: 25vw;
+}
+.sales-point p {
+    margin: .5em 0;
+}
+
+footer {
+    flex-basis: 100vw;
+    padding: 2em 0;
+    border-top: 5px ridge goldenrod;
+}
+footer p {
+    font-size: 80%;
+    font-variant: small-caps;
+    text-align: center;
+    font-weight: 600;
+}
