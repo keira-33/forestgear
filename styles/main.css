@@ -179,3 +179,73 @@ footer p {
     text-align: center;
     font-weight: 600;
 }
+
+#mobilemenu {
+    display: none;
+}
+
+/* media queries */
+@media (max-width: 767px) {
+    #nav_menu {
+        display: none;
+    }
+    #mobilemenu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: darkgreen;
+        position: fixed;
+        /* positon absolute makes it stay in the same spot but fixed means it comes w you when you scroll*/
+        right: 0px; 
+        top: 0px;
+    }
+    .slicknav_nav a {
+        text-shadow: 3px 3px 8px black;
+    }
+    header {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .logoimage {
+        /* align self: flex property -- logo image is a flex child (only works if element is a flex child) */
+        align-self: center; 
+        justify-self: flex-start;
+    }
+    .title-text {
+        padding-top: 5vh;
+        margin:0;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+    }
+    .allcaps {
+        letter-spacing: 5px;
+    }
+    .title-text h1 {
+        font-size: 150%;
+        letter-spacing: 5px;
+        outline: 3px solid aliceblue;
+        outline-offset: .25em;
+        flex-wrap: wrap;
+    }
+    .sales-points {
+        padding: 2vh 0;
+        justify-content: space-evenly;
+    }
+    .sales-point {
+        width: 90vw;
+        /* now it takes up almost all the viewport width */
+        margin: 2em 1em;
+    }
+    .cta-contents {
+        padding: 3em 2em;
+        text-align: center;
+        margin: 3em;
+    }
+    .return-to-top {
+        left: 10px;
+        bottom: 10px;
+    }
+}
